@@ -1,8 +1,8 @@
 # :banana: Taufiq's dotfiles
 
-**Warning :warning:**: Don't blindly use my settings unless you know what it requires. Please use at your own risk!
+**WARNING**: Don't blindly use my settings unless you know what it requires. Please use at your own risk!
 
-## :speech_balloon: Extensions for VS Code
+## Extensions for VS Code
 
 There are many extensions available for VS Code. You will probably want to add ones for frequently used programming languages, and the rest are personal preferences. I work mostly in JavaScript, React, Svelte, and Python. These are all of the extensions I use:
 
