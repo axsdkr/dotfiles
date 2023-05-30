@@ -2,35 +2,35 @@
 # ~/.bashrc
 #
 
-# export shell variables
+# Export SHELL variables
 export EDITOR=code
 export HISTCONTROL=ignoreboth
 export MANPAGER='nvim +Man!'
 
-# colours have names too
-txtblk='\[\e[0;30m\]' # black
-txtred='\[\e[0;31m\]' # red
-txtgrn='\[\e[0;32m\]' # green
-txtylw='\[\e[0;33m\]' # yellow
-txtblu='\[\e[0;34m\]' # blue
-txtpur='\[\e[0;35m\]' # purple
-txtcyn='\[\e[0;36m\]' # cyan
-txtwht='\[\e[0;37m\]' # white
-txtrst='\[\e[0m\]'    # text reset
+# Colors also have names
+txtblk='\[\e[0;30m\]' # Black
+txtred='\[\e[0;31m\]' # Red
+txtgrn='\[\e[0;32m\]' # Green
+txtylw='\[\e[0;33m\]' # Yellow
+txtblu='\[\e[0;34m\]' # Blue
+txtpur='\[\e[0;35m\]' # Purple
+txtcyn='\[\e[0;36m\]' # Cyan
+txtwht='\[\e[0;37m\]' # White
+txtrst='\[\e[0m\]'    # Reset
 
-# prompt pending patents
+# Apply for pending patents
 export PS1="${txtpur}\u${txtpur}@${txtpur}\h:${txtgrn}\w ${txtgrn}▶ ${txtrst}"
 
-# a wrapper around grep
+# A wrapper around grep
 complete -W "\$(gf -list)" gf
 
-# a smarter cd command
+# A smarter cd command
 eval "$(zoxide init bash)"
 
-# control optional shell behavior
+# Controlling optional SHELL behavior
 shopt -s autocd
 
-# readline variables
+# Readline variables
 bind '"\e[A": history-search-backward'
 bind '"\e[B": history-search-forward'
 bind 'set colored-completion-prefix on'
@@ -38,31 +38,31 @@ bind 'set colored-stats on'
 bind 'set completion-ignore-case on'
 bind 'set show-all-if-ambiguous on'
 
-# auto print list if open directory
+# Auto print list if open directory
 cd() {
   builtin cd "$@" || exit
   exa -a --color=always --group-directories-first
 }
 
-# find the folder and open it directly in the editor
+# Find the folder and open it directly in the EDITOR
 fd() {
   DIR=$(find . -type d | fzf)
   $EDITOR "$DIR"
 }
 
-# find the file and open it directly in the editor
+# Find the file and open it directly in the EDITOR
 ff() {
   FILE=$(find . -type f | fzf)
   $EDITOR "$FILE"
 }
 
-# create a folder and immediately open the folder
+# Create a folder and open it immediately
 mc() {
   mkdir -p "$1"
   cd "$1" || exit
 }
 
-# personal binaries
+# Private PATH binaries
 if [[ -d "$HOME/bin" ]]; then
   PATH="$HOME/bin:$PATH"
 fi
@@ -71,22 +71,22 @@ if [[ -d "$HOME/.local/bin" ]]; then
   PATH="$HOME/.local/bin:$PATH"
 fi
 
-# navigation
+# Navigate back
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
-# issue a forced command for this
+# Issued a forced command for this
 alias cp='cp -frv'
 alias mv='mv -fv'
 alias rm='rm -frv'
 
-# replace ls with exa
+# Replace ls with exa
 alias ls='exa -al --color=always --group-directories-first'
 alias la='exa -a --color=always --group-directories-first'
 alias lt='exa -aT --color=always --group-directories-first'
 
-# another command
+# Another command
 alias grep='grep --color=always'
 alias wget='wget -c'
 alias mkdir='mkdir -pv'
