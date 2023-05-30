@@ -1,0 +1,12 @@
+[user]
+  name = axsdkr
+  email = xxx@axsdkr.com
+[alias]
+  ba = branch -a
+  br = branch
+  ca = commit -a
+  cm = commit
+  co = checkout
+  df = diff
+  pp = !git pull && git push
+  st = status
