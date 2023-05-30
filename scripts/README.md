@@ -1,1 +1,1 @@
-> :exclamation: Don't run this script!
+**WARNING**: Don't run this script!
