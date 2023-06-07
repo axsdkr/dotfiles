@@ -2,10 +2,12 @@
 # ~/.bashrc
 #
 
-# Export SHELL variables
+# Export shell variables
 export EDITOR=code
 export HISTCONTROL=ignoreboth
-export MANPAGER='nvim +Man!'
+export MANPAGER='sh -c "col -bx | bat -l man -p"'
+export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+export TERM=xterm-256color
 
 # Colors also have names
 txtblk='\[\e[0;30m\]' # Black
@@ -27,7 +29,7 @@ complete -W "\$(gf -list)" gf
 # A smarter cd command
 eval "$(zoxide init bash)"
 
-# Controlling optional SHELL behavior
+# Controlling optional shell behavior
 shopt -s autocd
 
 # Readline variables
@@ -44,13 +46,13 @@ cd() {
   exa -a --color=always --group-directories-first
 }
 
-# Find the folder and open it directly in the EDITOR
+# Find the folder and open it directly in the editor
 fd() {
   DIR=$(find . -type d | fzf)
   $EDITOR "$DIR"
 }
 
-# Find the file and open it directly in the EDITOR
+# Find the file and open it directly in the editor
 ff() {
   FILE=$(find . -type f | fzf)
   $EDITOR "$FILE"
@@ -61,15 +63,6 @@ mc() {
   mkdir -p "$1"
   cd "$1" || exit
 }
-
-# Private PATH binaries
-if [[ -d "$HOME/bin" ]]; then
-  PATH="$HOME/bin:$PATH"
-fi
-
-if [[ -d "$HOME/.local/bin" ]]; then
-  PATH="$HOME/.local/bin:$PATH"
-fi
 
 # Navigate back
 alias ..='cd ..'
@@ -87,6 +80,9 @@ alias la='exa -a --color=always --group-directories-first'
 alias lt='exa -aT --color=always --group-directories-first'
 
 # Another command
+alias :q='exit'
+alias cat='bat -pp'
+alias g='git'
 alias grep='grep --color=always'
-alias wget='wget -c'
 alias mkdir='mkdir -pv'
+alias wget='wget -c'
