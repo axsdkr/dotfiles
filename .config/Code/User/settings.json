@@ -20,7 +20,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": "'calt', 'ss01'",
-  "editor.fontSize": 16,
+  "editor.fontSize": 17,
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -61,6 +61,12 @@
   "terminal.integrated.copyOnSelection": true,
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-d>": false,
+    "<C-f>": false,
+    "<C-j>": false
+  },
   "vim.highlightedyank.enable": true,
   "vim.insertModeKeyBindings": [
     {
@@ -68,7 +74,6 @@
       "before": ["i", "i"]
     }
   ],
-  "vim.useCtrlKeys": false,
   "vim.useSystemClipboard": true,
   "vsicons.dontShowNewVersionMessage": true,
   "window.menuBarVisibility": "toggle",
