@@ -46,6 +46,9 @@
   "extensions.autoUpdate": false,
   "files.enableTrash": false,
   "files.insertFinalNewline": true,
+  "files.readonlyInclude": {
+    "**/node_modules/*/**": true
+  },
   "files.simpleDialog.enable": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
@@ -81,6 +84,7 @@
   "window.zoomLevel": 0.7,
   "workbench.colorTheme": "Rosé Pine",
   "workbench.editor.labelFormat": "short",
+  "workbench.editor.tabSizing": "fixed",
   "workbench.iconTheme": "vscode-icons",
   "workbench.panel.defaultLocation": "right",
   "workbench.productIconTheme": "fluent-icons",
