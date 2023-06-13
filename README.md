@@ -34,6 +34,7 @@ code --install-extension mvllow.rose-pine
 code --install-extension naumovs.color-highlight
 code --install-extension rangav.vscode-thunder-client
 code --install-extension redhat.vscode-xml
+code --install-extension sirmspencer.vscode-autohide
 code --install-extension svelte.svelte-vscode
 code --install-extension TabNine.tabnine-vscode
 code --install-extension timonwong.shellcheck

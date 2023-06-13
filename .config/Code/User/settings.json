@@ -9,6 +9,8 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
+  "autoHide.panelDelay": 0,
+  "autoHide.sideBarDelay": 0,
   "breadcrumbs.enabled": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
