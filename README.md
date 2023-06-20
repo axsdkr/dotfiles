@@ -24,6 +24,7 @@ code --install-extension formulahendry.auto-rename-tag
 code --install-extension GitHub.vscode-pull-request-github
 code --install-extension JannisX11.batch-rename-extension
 code --install-extension miguelsolorio.fluent-icons
+code --install-extension ms-azuretools.vscode-docker
 code --install-extension ms-python.black-formatter
 code --install-extension ms-python.isort
 code --install-extension ms-python.python

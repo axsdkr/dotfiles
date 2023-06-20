@@ -72,11 +72,13 @@
     "<C-d>": false,
     "<C-j>": false
   },
+  "vim.highlightedyank.color": "rgba(255, 182, 56, 0.5)",
+  "vim.highlightedyank.enable": true,
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
       "after": ["<Esc>"],
-      "before": ["j", "j"]
+      "before": ["i", "i"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
@@ -98,7 +100,6 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "right",
-  "workbench.startupEditor": "none",
   "workbench.tree.indent": 17,
   "workbench.tree.renderIndentGuides": "none"
 }
