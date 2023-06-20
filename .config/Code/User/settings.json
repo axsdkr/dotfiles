@@ -30,7 +30,6 @@
   "editor.guides.bracketPairsHorizontal": true,
   "editor.lineNumbers": "relative",
   "editor.minimap.enabled": false,
-  "editor.mouseWheelZoom": true,
   "editor.quickSuggestions": {
     "comments": true,
     "other": true,
@@ -100,6 +99,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "right",
+  "workbench.startupEditor": "none",
   "workbench.tree.indent": 17,
   "workbench.tree.renderIndentGuides": "none"
 }
