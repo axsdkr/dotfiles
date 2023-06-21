@@ -59,7 +59,6 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
-  "git.showPushSuccessNotification": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "markdown.preview.fontFamily": "JetBrains Mono",
   "material-icon-theme.hidesExplorerArrows": true,
