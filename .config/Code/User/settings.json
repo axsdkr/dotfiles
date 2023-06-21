@@ -50,6 +50,8 @@
   "files.enableTrash": false,
   "files.insertFinalNewline": true,
   "files.readonlyInclude": {
+    "**/.next/*/**": true,
+    "**/.svelte-kit/*/**": true,
     "**/node_modules/*/**": true
   },
   "files.trimFinalNewlines": true,
@@ -57,12 +59,16 @@
   "git.autofetch": true,
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
+  "git.showPushSuccessNotification": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
+  "markdown.preview.fontFamily": "JetBrains Mono",
+  "material-icon-theme.hidesExplorerArrows": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
   "security.workspace.trust.enabled": false,
   "svelte.enable-ts-plugin": true,
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.location": "left",
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -100,6 +106,6 @@
   "workbench.productIconTheme": "fluent-icons",
   "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
-  "workbench.tree.indent": 17,
+  "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "none"
 }
