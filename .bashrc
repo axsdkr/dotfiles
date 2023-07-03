@@ -6,7 +6,7 @@
 export EDITOR=code
 export HISTCONTROL=ignoreboth
 export MANPAGER='sh -c "col -bx | bat -l man -p"'
-export PATH=$HOME/bin:$HOME/.local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
 export TERM=xterm-256color
 
 # Colors also have names
@@ -21,7 +21,7 @@ txtwht='\[\e[0;37m\]' # White
 txtrst='\[\e[0m\]'    # Reset
 
 # Apply for pending patents
-export PS1="${txtpur}\u${txtpur}@${txtpur}\h:${txtgrn}\w ${txtgrn}▶ ${txtrst}"
+export PS1="${txtpur}\u${txtpur}@${txtpur}\h:${txtgrn}\w ${txtgrn}» ${txtrst}"
 
 # A wrapper around grep
 complete -W "\$(gf -list)" gf
