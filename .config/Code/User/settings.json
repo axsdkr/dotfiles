@@ -1,10 +1,15 @@
 {
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
-    "editor.tabSize": 4
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
   },
   "[svelte]": {
     "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
   },
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
@@ -20,9 +25,10 @@
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorSurroundingLines": 10,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Iosevka",
   "editor.fontLigatures": true,
-  "editor.fontSize": 17,
+  "editor.fontSize": 19,
+  "editor.fontWeight": "500",
   "editor.formatOnPaste": true,
   "editor.formatOnSave": true,
   "editor.formatOnType": true,
@@ -60,13 +66,14 @@
   "git.confirmSync": false,
   "git.enableSmartCommit": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "markdown.preview.fontFamily": "JetBrains Mono",
   "material-icon-theme.hidesExplorerArrows": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.typeCheckingMode": "basic",
   "security.workspace.trust.enabled": false,
   "svelte.enable-ts-plugin": true,
   "terminal.integrated.copyOnSelection": true,
+  "terminal.integrated.fontSize": 17,
+  "terminal.integrated.fontWeight": "500",
   "terminal.integrated.persistentSessionReviveProcess": "never",
   "terminal.integrated.tabs.location": "left",
   "turboConsoleLog.includeFileNameAndLineNum": false,
@@ -74,6 +81,7 @@
   "vim.handleKeys": {
     "<C-b>": false,
     "<C-d>": false,
+    "<C-f>": false,
     "<C-j>": false
   },
   "vim.highlightedyank.color": "rgba(255, 182, 56, 0.5)",
@@ -82,7 +90,7 @@
   "vim.insertModeKeyBindings": [
     {
       "after": ["<Esc>"],
-      "before": ["i", "i"]
+      "before": ["<S-i>"]
     }
   ],
   "vim.normalModeKeyBindingsNonRecursive": [
