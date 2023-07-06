@@ -39,7 +39,6 @@ code --install-extension PKief.material-icon-theme
 code --install-extension rangav.vscode-thunder-client
 code --install-extension redhat.vscode-xml
 code --install-extension rust-lang.rust-analyzer
-code --install-extension sirmspencer.vscode-autohide
 code --install-extension svelte.svelte-vscode
 code --install-extension tamasfe.even-better-toml
 code --install-extension timonwong.shellcheck
