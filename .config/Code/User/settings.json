@@ -14,8 +14,6 @@
   "[xml]": {
     "editor.defaultFormatter": "redhat.vscode-xml"
   },
-  "autoHide.panelDelay": 0,
-  "autoHide.sideBarDelay": 0,
   "breadcrumbs.enabled": false,
   "editor.codeActionsOnSave": {
     "source.fixAll": true,
@@ -23,7 +21,6 @@
   },
   "editor.cursorBlinking": "solid",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorSurroundingLines": 10,
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Iosevka",
   "editor.fontLigatures": true,
@@ -35,7 +32,6 @@
   "editor.guides.bracketPairs": true,
   "editor.guides.bracketPairsHorizontal": true,
   "editor.lineNumbers": "relative",
-  "editor.minimap.enabled": false,
   "editor.quickSuggestions": {
     "comments": true,
     "other": true,
@@ -75,7 +71,6 @@
   "terminal.integrated.fontSize": 17,
   "terminal.integrated.fontWeight": "500",
   "terminal.integrated.persistentSessionReviveProcess": "never",
-  "terminal.integrated.tabs.location": "left",
   "turboConsoleLog.includeFileNameAndLineNum": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
   "vim.handleKeys": {
@@ -86,13 +81,6 @@
   },
   "vim.highlightedyank.color": "rgba(255, 182, 56, 0.5)",
   "vim.highlightedyank.enable": true,
-  "vim.hlsearch": true,
-  "vim.insertModeKeyBindings": [
-    {
-      "after": ["<Esc>"],
-      "before": ["<S-i>"]
-    }
-  ],
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "after": ["5", "j"],
@@ -107,12 +95,13 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreWindows": "none",
   "window.zoomLevel": 0.7,
-  "workbench.colorTheme": "Bearded Theme Vivid Black",
+  "workbench.colorTheme": "Bearded Theme Black & Emerald",
+  "workbench.editor.enablePreview": false,
   "workbench.editor.labelFormat": "short",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.productIconTheme": "fluent-icons",
-  "workbench.sideBar.location": "right",
   "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": false,
   "workbench.tree.indent": 20,
   "workbench.tree.renderIndentGuides": "none"
 }
