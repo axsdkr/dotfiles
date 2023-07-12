@@ -3,11 +3,10 @@
 #
 
 # Export shell variables
-export EDITOR=code
+export EDITOR=nvim
 export HISTCONTROL=ignoreboth
-export MANPAGER='sh -c "col -bx | bat -l man -p"'
+export MANPAGER='nvim +Man!'
 export PATH=$HOME/bin:$HOME/.local/bin:$HOME/.cargo/bin:$PATH
-export TERM=xterm-256color
 
 # Colors also have names
 txtblk='\[\e[0;30m\]' # Black
@@ -81,7 +80,7 @@ alias lt='exa -aT --color=always --group-directories-first'
 
 # Another command
 alias :q='exit'
-alias cat='bat -pp'
+alias cat='bat -pp --theme base16-256'
 alias g='git'
 alias grep='grep --color=always'
 alias mkdir='mkdir -pv'
