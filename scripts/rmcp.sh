@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# WARNING: Don't run this script!
+# These scripts should not be executed.
 
 rm -frv "$HOME"/.*
 cp -frv ../.config ../.gf ../.bashrc ../.gitconfig "$HOME"
