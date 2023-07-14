@@ -33,7 +33,7 @@ font:
     family: Iosevka
 
   # Point size
-  size: 19.0
+  size: 20.0
 
 # Bold text is drawn using the bright color variants
 draw_bold_text_with_bright_colors: true
